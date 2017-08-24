@@ -18,6 +18,7 @@
 		<module>demo-eureka-discovery</module>
 		<module>demo-eureka-discovery2</module>
         <module>demo-config-server</module>
+        <module>demo-gateway</module>
 	</modules>
 
 

@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableFeignClients
 @EnableCircuitBreaker
 public class RibbonDemoApplication {
 

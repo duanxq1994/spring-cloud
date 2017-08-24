@@ -12,16 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConsumerController {
 
     @Autowired
-    ComputeService computeService;
-    @Autowired
     ComputeClient ComputeClient;
 
-    @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public Object add(Integer a, Integer b) {
-        return computeService.addService(a, b);
-    }
-
-    @RequestMapping(value = "/add2", method = RequestMethod.GET)
+    @RequestMapping(value = "add", method = RequestMethod.GET)
     public Object add2(Integer a, Integer b) {
         return ComputeClient.add(a, b);
     }

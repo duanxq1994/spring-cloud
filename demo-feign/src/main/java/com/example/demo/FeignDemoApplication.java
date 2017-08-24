@@ -12,8 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableFeignClients
-@EnableCircuitBreaker
-public class RibbonDemoApplication {
+public class FeignDemoApplication {
 
 	@Bean
 	@LoadBalanced
@@ -23,6 +22,6 @@ public class RibbonDemoApplication {
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(RibbonDemoApplication.class, args);
+		SpringApplication.run(FeignDemoApplication.class, args);
 	}
 }
